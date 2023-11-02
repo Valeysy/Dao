@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const scrollToBottomButton = document.getElementById('scroll-to-bottom');
+    const scrollToBottomButton = document.getElementById('scroll-to-bottom2');
 
     scrollToBottomButton.addEventListener('click', function () {
         const documentHeight = document.documentElement.scrollHeight;
