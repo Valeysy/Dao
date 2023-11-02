@@ -24,6 +24,7 @@ nav {
     justify-content: space-between;
     background-color: #ffffff4a;
     list-style-type: none;
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px); 
     height: 80px;
     padding-inline: 50px;
