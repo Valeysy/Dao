@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1920px;
+}
+
+h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff4a;
+    list-style-type: none;
+    backdrop-filter: blur(15px); 
+    height: 80px;
+    padding-inline: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.03);
+}
+
+.logotitle {
+    margin-left: 10px;
+    background: linear-gradient(105deg, #000 11.85%, #59BDFF 129.64%, #060A0D 129.64%, #2198E8 129.64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 510;
+    font-size: 18px;
+}
+
+.logotitle-a {
+    font-size: 14px;
+    color: #000;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    margin-inline: 20px;
+    font-size: 16px;
+    font-weight: 510;
+    transition: all 0.2s;
+}
+
+.nav-link a:hover {
+    background-color: #00000013;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.contact-a {
+    color: white;
+}
+
+.contact {
+    display: inline-block;
+    font-size: 16px;
+    padding: 14px 25px;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    background: linear-gradient(239deg, #727eff 1.54%, #2a8dff 100%);
+    transition: all 0.3s;
+    cursor: pointer;
+    --color: #0048ff;
+    overflow: hidden;
+    color: var(--color);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(255, 255, 255, 0.156), inset -4px -4px 8px rgba(19, 95, 216, 0.238);
+}
+
+.contact::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+}
+  
+.contact:hover {
+    transform: scale(1.08);    
+}   
+  
+.contact:hover::before {
+    top: -30px;
+    left: -30px;
+}
+
+.langage {
+    display: flex;
+    align-items: center;
+}
+
+.langage-text {
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.bg-a {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(98, 141, 210, 0.17) 100%);
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/fond.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-y: 60%;
+    background-position-x: 80%;
+}
+
+.title {
+    font-size: 32px;
+    background: linear-gradient(107deg, #000 7.98%, #2784CC 130.42%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 13pc;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 590;
+}
+
+.title h1::after {
+    content: "DỊCH VỤ CHÍNH";
+    position: absolute;
+    top: 10;
+    left: 0;
+    background: linear-gradient(-45deg, #000000 , #354DCF , #3686CE , #000000);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient 20s ease infinite;
+    text-shadow: 4px 4px 30px rgba(0, 143, 255, 0.25);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.title h2 {
+    font-size: 24px;
+    font-weight: 520;
+}
+
+.btn {
+    height: 70px;
+    width: 70px;
+    background: linear-gradient(239deg, #6473FF 1.54%, #4092D2 100%);    border-radius: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    right: 40px;
+    bottom: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    transform: scale(1.08);   
+    background: linear-gradient(239deg, #0048ff 1.54%, #0048ff 100%);
+}
+
+
+.btn:hover .phone {
+    transform: rotateY(180deg);
+}
+
+.phone {
+    transition: all 0.3s;
+}

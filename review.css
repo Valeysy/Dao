@@ -1,0 +1,67 @@
+.review {    
+    background: #F8FBFF;
+    border-bottom: 1px solid rgba(2, 0, 90, 0.30);
+    height: 65vh;
+    max-width: 100%
+}
+
+.review-title {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 590;
+    padding: 60px;
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(6, 660px);
+    grid-column-gap: 6%;
+    position: relative; 
+    overflow: hidden;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%); 
+    }
+    100% {
+      transform: translateX(-190%);
+    }
+  }
+
+.review-card {
+    width: 660px;
+    height: 253px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.10);
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    animation: scroll 30s linear infinite; 
+
+}
+
+.review-element {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.review-element h4 {
+    font-size: 20px;
+    font-weight: 590;
+    margin-bottom: 10px;
+}
+
+.review-element p {
+    font-size: 16px;
+    font-weight: 420;
+    color: var(--gray-gray-700, #4A5568);
+    margin-top: 10px;
+}
+
+
+
