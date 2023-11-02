@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="review.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
     <link rel="shortcut icon" src="image/favicon.png" type="image/png">
     <title>DỊCH VỤ CHÍNH</title>
@@ -16,7 +18,7 @@
 
 <body>
 
-    <nav>
+    <nav data-aos="fade-down">
         <a href="#" class="logo">
             <img src="image/logo.png" alt="Logo">
             <div class="logotitle">
@@ -39,7 +41,7 @@
                     <a href="#">Xe ô tô</a>
                 </li>
 
-                <button class="contact">
+                <button class="contact" id="scroll-to-bottom">
                     <p class="contact-a">Liên hệ</p>
                 </button>
             </ul>
@@ -47,28 +49,28 @@
     
     <div class="bg-a">
         <header>
-                <div class="title">
+                <div data-aos="fade-down-right" class="title">
                     <h1>DỊCH VỤ CHÍNH</h1>
                     <h2>Lựa chọn chính xác của bạn</h2>
                 </div>
         </header>
     </div>
 
-    <button class="btn" id="scroll-to-bottom">
+    <button data-aos="fade-down-left" class="btn" id="scroll-to-bottom">
         <img src="image/phone.white.svg" class="phone">
     </button>
 
     <div class="service">
-        <h3 class="service-title">Dịch vụ chúng tôi cung cấp</h3>
+        <h3 class="service-title" data-aos="fade-down">Dịch vụ chúng tôi cung cấp</h3>
             <div class="service-card">
-                <a href="#" class="s-card-a">
+                <a href="#" class="s-card-a" data-aos="fade-right">
                     <div class="s-card-element">
                         <h4 class="s-card-title">Dịch thuật</h4>
                         <p class="s-card-p">Nhóm của chúng tôi ở đây để giúp bạn mọi thứ bạn cần. Từ dịch thuật tài liệu đến sự hỗ trợ của phiên dịch viên. Mọi thứ đều ở đó để làm cho cuộc sống hàng ngày của bạn trở nên đơn giản.</p>
                         <img class="s-arrow" src="image/chevron.right.circle.png">
                     </div>
                 </a>
-                <a href="#" class="s-card-b">
+                <a href="#" class="s-card-b" data-aos="fade-left">
                     <div class="s-card-element">
                         <h4 class="s-card-title">Xe ô tô</h4>
                         <p class="s-card-p">Sửa chữa ô tô, sơn lại, vệ sinh, mọi thứ đều nhằm mục đích mang lại những gì tốt nhất cho chiếc xe của bạn. Dịch vụ tuyệt vời của chúng tôi luôn sẵn sàng phục vụ bạn!</p>
@@ -79,10 +81,10 @@
     </div>
 
     <div class="team">
-        <h3 class="team-title">Về đội ngũ của chúng tôi</h3>
+        <h3 class="team-title" data-aos="fade-down">Về đội ngũ của chúng tôi</h3>
 
         <section class="team-margin">
-            <section class="teamate">
+            <section class="teamate" data-aos="zoom-in">
                 <div class="mate">
                     <img class="team-pp" src="image/mate.png">
                     <h4 class="team-name">Dima Archibasev</h4>
@@ -123,9 +125,9 @@
     </div>
 
     <div class="review">
-        <h3 class="review-title">Đánh giá</h3>
+        <h3 class="review-title" data-aos="fade-down">Đánh giá</h3>
 
-        <section class="review-container">
+        <section class="review-container" data-aos="zoom-in-left">
             <div class="review-card">
               <img src="image/pdp.png">
               <div class="review-element">
@@ -184,11 +186,11 @@
     </div>
 
     <div class="contact-page">
-        <h3 class="contact-title">Liên hệ</h3>
+        <h3 class="contact-title" data-aos="fade-down">Liên hệ</h3>
         <div class="info">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169401.55688012092!2d37.667173420951315!3d55.702346261709486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscou%2C%20Russie!5e0!3m2!1sfr!2sfr!4v1698857981898!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="map" data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169401.55688012092!2d37.667173420951315!3d55.702346261709486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscou%2C%20Russie!5e0!3m2!1sfr!2sfr!4v1698857981898!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
-            <div class="info-content">
+            <div class="info-content" data-aos="fade-up">
 
                 <h4 class="location">Moscou - Russia</h4>
                 <p class="info-content-p">Liên lạc với chúng tôi để biết thêm thông tin</p>
@@ -230,6 +232,10 @@
     <footer>
         <p>© 2023 Copyright by DỊCH VỤ CHÍNH. All rights reserved.</p>
     </footer>
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
