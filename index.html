@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="review.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="media.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
@@ -19,6 +20,7 @@
 <body>
 
     <nav data-aos="fade-down">
+
         <a href="#" class="logo">
             <img src="image/logo.png" alt="Logo">
             <div class="logotitle">
@@ -27,24 +29,26 @@
             </div>
         </a>
 
-            <ul class="nav-link">
-                <li>
-                    <a href="#" class="langage">
-                        <img src="image/langage.png">
-                        <p class="langage-text">Tiếng Việt</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Dịch thuật</a>
-                </li>
-                <li>
-                    <a href="#">Xe ô tô</a>
-                </li>
+        <div class="nav-link">
+            <li>
+                <a href="#" class="langage">
+                    <img src="image/langage.png">
+                    <p class="langage-text">Tiếng Việt</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">Dịch thuật</a>
+            </li>
+            <li>
+                <a href="#">Xe ô tô</a>
+            </li>
 
-                <button class="contact" id="scroll-to-bottom2">
-                    <p class="contact-a">Liên hệ</p>
-                </button>
-            </ul>
+            <button class="contact" id="scroll-to-bottom2">
+                <p class="contact-a">Liên hệ</p>
+            </button>
+        </div>
+
+        <img src="image/Menu.svg" class="menu-hamburger">
     </nav>
     
     <div class="bg-a">
@@ -67,14 +71,14 @@
                     <div class="s-card-element">
                         <h4 class="s-card-title">Dịch thuật</h4>
                         <p class="s-card-p">Nhóm của chúng tôi ở đây để giúp bạn mọi thứ bạn cần. Từ dịch thuật tài liệu đến sự hỗ trợ của phiên dịch viên. Mọi thứ đều ở đó để làm cho cuộc sống hàng ngày của bạn trở nên đơn giản.</p>
-                        <img class="s-arrow" src="image/chevron.right.circle.png">
+                        <img class="s-arrow" src="image/chevron.right.circle.svg">
                     </div>
                 </a>
                 <a href="#" class="s-card-b">
                     <div class="s-card-element">
                         <h4 class="s-card-title">Xe ô tô</h4>
                         <p class="s-card-p">Sửa chữa ô tô, sơn lại, vệ sinh, mọi thứ đều nhằm mục đích mang lại những gì tốt nhất cho chiếc xe của bạn. Dịch vụ tuyệt vời của chúng tôi luôn sẵn sàng phục vụ bạn!</p>
-                        <img class="s-arrow" src="image/chevron.right.circle.png">
+                        <img class="s-arrow" src="image/chevron.right.circle.svg">
                     </div>
                 </a>
             </div>
@@ -237,6 +241,16 @@
     <script>
         AOS.init();
       </script>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-link")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    
 </body>
 
 </html>

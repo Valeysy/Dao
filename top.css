@@ -9,6 +9,7 @@
 
 body {
     max-width: 1920px;
+    width: 100%;
 }
 
 h1,h2,h3,h4,p {
@@ -33,6 +34,16 @@ nav {
     right: 0;
     left: 0;
     z-index: 1000;
+}
+
+.menu-hamburger {
+    display: none;
+    height: 30px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    cursor: pointer;
 }
 
 .logo {
@@ -170,6 +181,7 @@ header {
     box-sizing: border-box;
     position: relative;
     font-weight: 590;
+    transition: all 0.3s;
 }
 
 .title h1::after {
@@ -184,6 +196,7 @@ header {
     color: transparent;
     animation: gradient 20s ease infinite;
     text-shadow: 4px 4px 30px rgba(0, 143, 255, 0.25);
+    transition: all 0.3s;
 }
 
 @keyframes gradient {
@@ -220,7 +233,6 @@ header {
 }
 
 .btn:hover {
-    transform: scale(1.08);   
     background: linear-gradient(239deg, #0048ff 1.54%, #0048ff 100%);
 }
 
@@ -232,3 +244,5 @@ header {
 .phone {
     transition: all 0.3s;
 }
+
+
