@@ -171,6 +171,7 @@
     .title h2 {
         font-size: 20px;
     }
+    
 
     .service-title {
         padding-bottom: 40px;
@@ -188,6 +189,27 @@
         gap: 50px;
     }
 
+    .s-card-a {
+        position: relative;
+        width: 290px;
+        height: 320px;
+        min-width: 300px;
+    }
+
+    .s-card-b {
+        position: relative;
+        width: 290px;
+        height: 320px; 
+        min-width: 300px;
+    }
+
+    .s-arrow {
+        position: absolute;
+        top: 240px;
+        right: 0;
+        left: -30px;
+    }
+    
     .team {
         padding-bottom: 70px;
     }
@@ -200,16 +222,11 @@
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(1, 300px);
-        grid-column-gap: 7% ;
+        grid-template-rows: repeat(7, 400px);
     }
 
-    .map {
-        width: 375px;
-        height: 375px;
-    }
-
-    .info-content {
-        padding-inline: 7%;
+    .team-pp {
+        height: 80%;
     }
 
     .review-title {
@@ -221,8 +238,8 @@
     }
 
     .review-card {
-        width: 50%;
-        height: 100%;
+        width: 40%;
+        height: 70%;
         flex-shrink: 0;
         border-radius: 30px;
         background: #ffffff;
@@ -236,7 +253,7 @@
     }
 
     .review {
-        padding-bottom: 90px;
+        padding-bottom: 40px;
     }
     
     .review-container {
@@ -258,25 +275,24 @@
       }
 
     .review-card {
-        width: 305px;
+        width: 260px;
         height: 95%;
         padding: 10%;
         animation: scroll 24s linear infinite; 
     }
 
     .review img {
-        height: 200px;
-        width: 200px;
+        height: 130px;
+        width: 130px;
     }
 
     .review-element img {
-        height: 40px;
-        width: 200px;
+        height: 20px;
+        width: 100px;
+        margin: 0;
     }
 
     .review-element {
-        margin-left: 15px;
-        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -285,15 +301,23 @@
     .review-element h4 {
         font-size: 20px;
         font-weight: 590;
-        margin-bottom: 10px;
+        margin-bottom: 7px;
     }
 
     .review-element p {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 420;
         color: var(--gray-gray-700, #4A5568);
-        margin-top: 10px;
+        margin-top: 7px;
         text-align: center;
     }
 
+    .map {
+        width: 375px;
+        height: 375px;
+    }
+
+    .info-content {
+        padding-inline: 7%;
+    }
 }
