@@ -6,6 +6,11 @@
         z-index: 10000;
     }
 
+    .contact {
+        margin-left: 0;
+        box-shadow: none;
+    }
+
     .nav-link {
         position: absolute;
         display: flex;
@@ -29,10 +34,6 @@
     .mobile-menu {
         margin-right: 0%;
         flex-shrink: 0;
-    }
-
-    .nav-link a:hover {
-        visibility: hidden;
     }
 
     .contact {
@@ -111,9 +112,6 @@
 }
 
 @media (max-width: 620px) {
-    .logotitle {
-        display: none;
-    }
 
     nav {
         padding-inline: 30px;
