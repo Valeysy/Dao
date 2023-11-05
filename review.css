@@ -61,4 +61,8 @@
   font-weight: 420;
   color: var(--gray-gray-700, #4A5568);
   margin-top: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

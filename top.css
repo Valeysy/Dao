@@ -199,7 +199,7 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: gradient 20s ease infinite;
+    animation: gradient 15s ease infinite;
     text-shadow: 4px 4px 30px rgba(0, 143, 255, 0.25);
     transition: all 0.3s;
 }
