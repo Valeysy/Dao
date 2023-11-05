@@ -232,8 +232,9 @@ header {
     z-index: 1000;
 }
 
+
 .btn:hover {
-    background: linear-gradient(239deg, #0048ff 1.54%, #0048ff 100%);
+    background: #0048ff;
 }
 
 
@@ -244,5 +245,3 @@ header {
 .phone {
     transition: all 0.3s;
 }
-
-

@@ -1,12 +1,11 @@
 .contact-page {
-    height: 92vh;
     max-width: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-title {
-    display: flex;
-    justify-content: center;
     font-size: 32px;
     font-weight: 590;
     padding: 60px;
@@ -15,7 +14,6 @@
 
 .info {
     display: flex;
-    margin-left: 15% ;
 }
 
 .map {

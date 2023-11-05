@@ -2,8 +2,10 @@
     background: #F8FBFF;
     border-top: 1px solid rgba(2, 0, 90, 0.30);
     border-bottom: 1px solid rgba(2, 0, 90, 0.30);
-    height: 65vh;
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
+    padding-bottom: 6%;
 }
 
 .service-title {
@@ -17,9 +19,8 @@
 
 .service-card {
     display: flex;
-    margin-inline: 7%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .s-card-a {
@@ -73,10 +74,11 @@
     background: linear-gradient(135deg, #e52cb4 -19.77%, #8382DA 104.48%);
     transition: all 0.3s;
     cursor: pointer;
-    --color: #C7209B;
+    --color: #b0238b;
     font-family: inherit;
     overflow: hidden;
     color: var(--color);
+    margin: 0;
 }
 
 .s-card-b::before {
