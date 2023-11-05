@@ -22,7 +22,7 @@
     <nav data-aos="fade-down">
 
         <a href="#" class="logo">
-            <img src="image/logo.png" alt="Logo">
+            <img src="image/logo.svg" alt="Logo">
             <div class="logotitle">
                 <p class="logotitle-a">Công ty</p>
                 <p>DỊCH VỤ CHÍNH</p>
@@ -48,7 +48,7 @@
             </button>
         </div>
 
-        <img src="image/Menu.svg" class="menu-hamburger">
+        <img src="image/Menu.svg" id="imageChanger" onclick="changerImage()" class="menu-hamburger">
 
     </nav>
     
@@ -246,13 +246,25 @@
         menuHamburger.addEventListener('click', (event) => {
         navLinks.classList.toggle('mobile-menu');
         event.stopPropagation(); 
- });
+    });
 
         document.addEventListener('click', (event) => {
         if (!navLinks.contains(event.target) && !menuHamburger.contains(event.target)) {
         navLinks.classList.remove('mobile-menu');
     }
-});
+    });
+    </script>
+
+    <script> 
+    function changerImage() {
+    const imageElement = document.getElementById("imageChanger");
+    if (imageElement.src.endsWith("image/Menu.svg")) {
+        imageElement.src = "image/multiply.svg";
+    } else {
+        imageElement.src = "image/Menu.svg";
+    }
+    }
+    
     </script>
     
 </body>

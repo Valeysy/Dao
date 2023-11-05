@@ -41,10 +41,15 @@ nav {
     height: 30px;
     height: 25px;
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 40px;
     cursor: pointer;
 }
+
+#imageChanger {
+    transition: all 0.9s;
+}
+
 
 .logo {
     display: flex;
@@ -233,7 +238,7 @@ header {
 }
 
 
-.btn:hover {
+.btn {
     background: #0048ff;
 }
 
