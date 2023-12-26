@@ -73,6 +73,46 @@ nav {
     font-size: 18px;
 }
 
+.lang {
+    margin-right: 20px;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: space-between; 
+    transition: all 0.5s;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.25rem);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    pointer-events: auto;
+}
+
+.dropdown.active > .lang + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 .logotitle-a {
     font-size: 14px;
     color: #000;
@@ -85,73 +125,34 @@ nav {
     padding: 0;
 }
 
+.nav-link li {
+    transition: all 0.2s;
+}
+
 .nav-link a {
     text-decoration: none;
     color: black;
     margin-inline: 20px;
     font-size: 16px;
     font-weight: 510;
-    transition: all 0.2s;
 }
 
-.nav-link a:hover {
+.nav-link li:hover {
     background-color: #00000013;
     padding: 13px;
     border-radius: 10px;
 }
 
-.contact-a {
-    color: white;
+.lang img {
+    z-index: -1000;
 }
 
-.contact {
-    display: inline-block;
-    font-size: 16px;
-    padding: 14px 25px;
-    margin-left: 15px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 100px;
-    background: linear-gradient(239deg, #727eff 1.54%, #2a8dff 100%);
-    transition: all 0.3s;
-    cursor: pointer;
-    --color: #0048ff;
-    overflow: hidden;
-    color: var(--color);
-    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(255, 255, 255, 0.156), inset -4px -4px 8px rgba(19, 95, 216, 0.238);
-}
-
-.contact::before {
-    position: absolute;
-    content: "";
-    background: var(--color);
-    width: 150px;
-    height: 200px;
-    z-index: -1;
-    border-radius: 50%;
-    top: 100%;
-    left: 100%;
-    transition: .3s all;
-}
-  
-.contact:hover {
-    transform: scale(1.08);    
-}   
-  
-.contact:hover::before {
-    top: -30px;
-    left: -30px;
-}
-
-.langage {
-    display: flex;
-    align-items: center;
-}
-
-.langage-text {
+.lang p {
     margin-left: 15px;
     color: rgba(0, 0, 0, 0.45);
+    font-size: 16px;
+    font-weight: 510;
+    z-index: -1000;
 }
 
 .bg-a {
@@ -165,7 +166,7 @@ nav {
 header {
     height: 100vh;
     width: 100%;
-    background-image: url(image/fond.svg);
+    background-image: url(../image/fond.svg);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position-y: 60%;
@@ -173,12 +174,17 @@ header {
 }
 
 .title {
-    font-size: 32px;
-    background: linear-gradient(107deg, #000 7.98%, #2784CC 130.42%);
+    position: absolute;
+    top: 20pc;
+    left: 17pc;
+    font-size: 34px;
+}
+
+.title h1 {
+    background: rgba(255, 255, 255, 0);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 13pc;
     height: 75%;
     display: flex;
     flex-direction: column;
@@ -186,7 +192,8 @@ header {
     box-sizing: border-box;
     position: relative;
     font-weight: 590;
-    transition: all 0.3s;
+    transition: 0.3s;
+    font-weight: 700;
 }
 
 .title h1::after {
@@ -201,7 +208,7 @@ header {
     color: transparent;
     animation: gradient 15s ease infinite;
     text-shadow: 4px 4px 30px rgba(0, 143, 255, 0.25);
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 
 @keyframes gradient {
@@ -217,6 +224,49 @@ header {
 }
 
 .title h2 {
+    margin-bottom: 50px;
+    color: #284AA3;
+}
+
+.contact {
+    color: #284AA3;
+    font-size: 20px;
+    font-size: 700;
+    background: #ffffff00;
+    border: 2px #3673D3 solid;
+    height: 60px;
+    width: 250px;
+    border-radius: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+}
+
+.contact:hover {
+    color: white;
+    width: 270px;
+}
+
+.contact::before  {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    height: 60px;
+    width: 270px;
+    border-radius: 200px;
+    background: linear-gradient(239deg, #3686CE 1.54%, #354DCF 100%);   
+    z-index: -1;
+    transition: all 0.4s;
+    transform: translate(-135%);
+    overflow: hidden;
+
+}
+
+.contact:hover::before {
+    transform: translate(-38%);
+}
+
+.title h2 {
     font-size: 24px;
     font-weight: 520;
 }
@@ -224,7 +274,8 @@ header {
 .btn {
     height: 70px;
     width: 70px;
-    background: linear-gradient(239deg, #6473FF 1.54%, #4092D2 100%);    border-radius: 100%;
+    background: linear-gradient(239deg, #354DCF 1.54%, #3686CE 100%);    
+    border-radius: 100%;
     display: flex; 
     justify-content: center;
     align-items: center;

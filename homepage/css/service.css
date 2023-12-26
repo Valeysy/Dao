@@ -1,7 +1,5 @@
 .service { 
     background: #F8FBFF;
-    border-top: 1px solid rgba(2, 0, 90, 0.30);
-    border-bottom: 1px solid rgba(2, 0, 90, 0.30);
     display: flex;
     flex-direction: column;
     max-width: 100%;

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="vn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="top.css">
-    <link rel="stylesheet" href="service.css">
-    <link rel="stylesheet" href="team.css">
-    <link rel="stylesheet" href="review.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
@@ -30,22 +30,23 @@
         </a>
 
         <div class="nav-link">
-            <li>
-                <a href="#" class="langage">
+
+            <div class="dropdown">
+                <button class="lang">
                     <img src="image/langage.png">
-                    <p class="langage-text">Tiếng Việt</p>
-                </a>
-            </li>
+                    <p>Tiếng Việt</p>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="index.html">English</a> 
+                    <a href="index.html">Russian</a> 
+                </div>
+            </div>
             <li>
                 <a href="#">Document</a>
             </li>
             <li>
                 <a href="#">Auto</a>
             </li>
-
-            <button class="contact" id="scroll-to-bottom2">
-                <p class="contact-a">Liên hệ</p>
-            </button>
         </div>
 
         <img src="image/Menu.svg" id="imageChanger" onclick="changerImage()" class="menu-hamburger">
@@ -55,8 +56,12 @@
     <div class="bg-a">
         <header>
                 <div data-aos="fade-down-right" class="title">
-                    <h1>DỊCH VỤ CHÍNH</h1>
+                    <h1>>DỊCH VỤ CHÍNH</h1>
                     <h2>Lựa chọn chính xác của bạn</h2>
+                    <button class="contact" id="scroll-to-bottom2">
+                        Liên hệ
+                        <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+                    </button>
                 </div>
         </header>
     </div>
@@ -237,7 +242,7 @@
 
     <script>
         AOS.init();
-      </script>
+    </script>
 
     <script>
         const menuHamburger = document.querySelector(".menu-hamburger");
@@ -264,9 +269,8 @@
         imageElement.src = "image/Menu.svg";
     }
     }
-    
     </script>
-    
+
 </body>
 
 </html>
