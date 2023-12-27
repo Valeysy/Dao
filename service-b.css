@@ -1,0 +1,16 @@
+.service-b {
+    background: #F8FBFF;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 6%;
+}
+
+.service-title-b {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 590;
+    padding: 60px;
+    margin-bottom: 20px;
+}
