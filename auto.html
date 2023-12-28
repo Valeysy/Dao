@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/top.css">
-    <link rel="stylesheet" href="css/service.css">
-    <link rel="stylesheet" href="css/team.css">
-    <link rel="stylesheet" href="css/review.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/top-c.css">
     <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/service-c.css">
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script/script.js"></script>
     <script src="script/loader.js"></script>
-    <link rel="shortcut icon" src="image/favicon.svg" type="image/png">
-    <title>DỊCH VỤ CHÍNH</title>
+    <title>Document</title>
 </head>
-
 <body>
 
     <div class="loader">
@@ -47,7 +43,7 @@
     <nav data-aos="fade-down">
 
         <a href="index.html" class="logo">
-            <img src="image/logo.svg" alt="Logo">
+            <img src="image/logo2.svg" alt="Logo">
             <div class="logotitle">
                 <p class="logotitle-a">Công ty</p>
                 <p>DỊCH VỤ CHÍNH</p>
@@ -58,7 +54,7 @@
 
             <div class="dropdown" data-dropdown>
                 <button class="lang" data-dropdown-button>
-                    <img src="image/language.svg">
+                    <img src="image/languageblack.svg">
                     <p>Tiếng Việt</p>
                 </button>
 
@@ -76,139 +72,104 @@
         </div>
 
         <img src="image/Menu.svg" id="imageChanger" onclick="changerImage()" class="menu-hamburger">
-
     </nav>
-    
-    <div class="bg-a">
+
+    <div class="bg-c">
         <header>
-                <div data-aos="fade-down-right" class="title">
-                    <h1>>DỊCH VỤ CHÍNH</h1>
-                    <h2>Lựa chọn chính xác của bạn</h2>
-                    <button class="contact" id="scroll-to-bottom2">
-                        Liên hệ
-                        <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
-                    </button>
-                </div>
+            <div data-aos="fade" class="title-b">
+                <h1>Xe ô tô</h1>
+            </div>
+            
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" class="car-a"><img src="image/car2.svg"></div>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" class="car-b"><img src="image/car1.svg"></div>
+            
+            <button class="contact" id="scroll-to-bottom2">
+                Liên hệ
+                <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+            </button>
         </header>
     </div>
+
 
     <button data-aos="fade-down-left" class="btn" id="scroll-to-bottom">
         <img src="image/phone.white.svg" class="phone">
     </button>
 
-    <div class="service">
+    <div class="service-c">
         <h3 class="service-title" data-aos="fade-down">Loại dịch vụ</h3>
-            <div class="service-card" data-aos="zoom-in">
-                <a href="document.html" class="s-card-a">
-                    <div class="s-card-element">
-                        <h4 class="s-card-title">Document</h4>
-                        <p class="s-card-p">Nhóm của chúng tôi ở đây để giúp bạn mọi thứ bạn cần. Từ dịch thuật tài liệu đến sự hỗ trợ của phiên dịch viên. Mọi thứ đều ở đó để làm cho cuộc sống hàng ngày của bạn trở nên đơn giản.</p>
-                        <img class="s-arrow" src="image/chevron.right.circle.svg">
-                    </div>
-                </a>
-                <a href="#" class="s-card-b">
-                    <div class="s-card-element">
-                        <h4 class="s-card-title">Auto</h4>
-                        <p class="s-card-p">Sửa chữa ô tô, sơn lại, vệ sinh, mọi thứ đều nhằm mục đích mang lại những gì tốt nhất cho chiếc xe của bạn. Dịch vụ tuyệt vời của chúng tôi luôn sẵn sàng phục vụ bạn!</p>
-                        <img class="s-arrow" src="image/chevron.right.circle.svg">
-                    </div>
-                </a>
+        <div class="service-cards"> 
+            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-d">
+                <img class="s-pp" src="image/service4.svg">
+                <h4 class="s-name">Sửa chữa</h4>
+                <p class="s-role">bảo dưỡng, độ  các loại xe theo yêu cầu của quý khách hàng. Sang tên, đổi chủ xe</p>
             </div>
+
+            <div data-aos="zoom-in" data-aos-delay="200" class="service-card-e">
+                <img class="s-pp" src="image/service5.svg">
+                <h4 class="s-name">Xe hơi</h4>
+                <p class="s-role">Cung cấp biển số xe đẹp. Cung cấp tất cả các loại giấy tờ liên quan đến xe của khách hàng</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-f">
+                <img class="s-pp" src="image/service6.svg">
+                <h4 class="s-name">Xử lý sự cố</h4>
+                <p class="s-role">Sản xuất cùng chuyên gia, làm việc tại Nga. Dịch vụ bảo hiểm Lam Osago, Kasko</p>
+            </div>
+        </div>
     </div>
 
-    <div class="team">
-        <h3 class="team-title" data-aos="fade-down">Team của Dịch vụ chính</h3>
 
-        <section class="teamate">
-            <div data-aos="zoom-in" data-aos-delay="100" class="mate">
-                <img class="team-pp" src="image/mate.png">
-                <h4 class="team-name">Dima Archibasev</h4>
-                <p class="team-role">CEO</p>
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="200" class="mate">
-                <img class="team-pp" src="image/mate.png">
-                <h4 class="team-name">Dima Archibasev</h4>
-                <p class="team-role">CEO</p>
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="300" class="mate">
-                <img class="team-pp" src="image/mate.png">
-                <h4 class="team-name">Dima Archibasev</h4>
-                <p class="team-role">CEO</p>
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="400" class="mate">
-                <img class="team-pp" src="image/mate.png">
-                <h4 class="team-name">Dima Archibasev</h4>
-                <p class="team-role">CEO</p>
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="100" class="mate">
-                <img class="team-pp" src="image/mate.png">
-                <h4 class="team-name">Dima Archibasev</h4>
-                <p class="team-role">CEO</p>
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="200" class="mate">
-                <img class="team-pp" src="image/mate.png">
-                <h4 class="team-name">Dima Archibasev</h4>
-                <p class="team-role">CEO</p>
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="300" class="mate">
-                <img class="team-pp" src="image/mate.png">
-                <h4 class="team-name">Dima Archibasev</h4>
-                <p class="team-role">CEO</p>
-            </div>
-        </section>
-    </div>
-
-    <div class="review">
+    <div class="review-c">
         <h3 class="review-title" data-aos="fade-down">Đánh giá</h3>
         <section class="review-container" data-aos="fade-down">
-            <div class="review-card">
+            <div class="review-card-c">
               <img src="image/pdp.png">
-              <div class="review-element">
+              <div class="review-element-c">
                 <h4>Alice</h4>
                 <img src="image/stars.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
               </div>
             </div>
           
-            <div class="review-card">
+            <div class="review-card-c">
               <img src="image/pdp.png">
-              <div class="review-element">
+              <div class="review-element-c">
                 <h4>Alice</h4>
                 <img src="image/stars.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
               </div>
             </div>
           
-            <div class="review-card">
+            <div class="review-card-c">
               <img src="image/pdp.png">
-              <div class="review-element">
+              <div class="review-element-c">
                 <h4>Alice</h4>
                 <img src="image/stars.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
               </div>
             </div>
 
-            <div class="review-card">
+            <div class="review-card-c">
                 <img src="image/pdp.png">
-                <div class="review-element">
+                <div class="review-element-c">
                   <h4>Alice</h4>
                   <img src="image/stars.png">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
                 </div>
               </div>
 
-              <div class="review-card">
+              <div class="review-card-c">
                 <img src="image/pdp.png">
-                <div class="review-element">
-                  <h4>Alice</h4>
+                <div class="review-element-c">
+                    <h4>Alice</h4>
                   <img src="image/stars.png">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
                 </div>
               </div>
 
-              <div class="review-card">
+              <div class="review-card-c">
                 <img src="image/pdp.png">
-                <div class="review-element">
+                <div class="review-element-c">
                   <h4>Alice</h4>
                   <img src="image/stars.png">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
@@ -230,31 +191,31 @@
                 <ul>
                     <li>
                         <a href="#" class="sn-link" target="_blank">
-                            <img src="image/mail.svg">
+                            <img src="image/mail2.svg">
                             <p>dcv.info@mail.ru</p>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="sn-link" target="_blank">
-                            <img src="image/phone.fill.svg">
+                            <img src="image/phone2.svg">
                             <p>+7 929 660-79-99</p>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="sn-link" target="_blank">
-                            <img src="image/whatsapp.svg">
+                            <img src="image/whatapp2.svg">
                             <p>Whatsapp</p>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="sn-link" target="_blank">
-                            <img src="image/facebook.svg">
+                            <img src="image/facebook2.svg">
                             <p>Facebook</p>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="sn-link" target="_blank">
-                            <img src="image/zalo.svg">
+                            <img src="image/zalo2.svg">
                             <p>Zalo</p>
                         </a>
                     </li>
@@ -262,17 +223,16 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="footer-c">
         <p>© 2023 Copyright by DỊCH VỤ CHÍNH. All rights reserved.</p>
     </footer>
+
 
     <script>
         AOS.init({
             once: true
           });
     </script>
-
-    
 
     <script>
         const menuHamburger = document.querySelector(".menu-hamburger");
@@ -302,5 +262,4 @@
     </script>
 
 </body>
-
 </html>

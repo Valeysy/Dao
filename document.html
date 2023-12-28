@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="top-b.css">
+    <link rel="stylesheet" href="css/top-b.css">
     <link rel="stylesheet" href="css/loader.css">
-    <link rel="stylesheet" href="service-b.css">
+    <link rel="stylesheet" href="css/service-b.css">
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script/script.js"></script>
     <script src="script/loader.js"></script>
     <title>Document</title>
@@ -59,10 +64,10 @@
                 </div>
             </div>
             <li>
-                <a href="#">Document</a>
+                <a href="document.html">Document</a>
             </li>
             <li>
-                <a href="#">Auto</a>
+                <a href="auto.html">Auto</a>
             </li>
         </div>
 
@@ -71,7 +76,7 @@
 
     <div class="bg-b">
         <header>
-            <div data-aos="fade-down-right" class="title-b">
+            <div data-aos="fade" class="title-b">
                 <h1>Dịch thuật</h1>
             </div>
             <img src="image/cercle.svg" class="circle-a">
@@ -86,7 +91,6 @@
                 Liên hệ
                 <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
             </button>
-
         </header>
     </div>
 
@@ -96,8 +100,170 @@
     </button>
 
     <div class="service-b">
-        <h3 class="service-title-b" data-aos="fade-down">Loại dịch vụ</h3>
+        <h3 class="service-title" data-aos="fade-down">Loại dịch vụ</h3>
+        <div class="service-cards"> 
+            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-a">
+                <img class="s-pp" src="image/service1.svg">
+                <h4 class="s-name">Chính thức</h4>
+                <p class="s-role">Tất cả các tài liệu chính thức của bạn, Chúng tôi đảm nhiệm việc dịch các tài liệu chính thức của bạn. Giấy đăng ký kết hôn và khai sinh, giấy chứng nhận công chứng, mua bán bất động sản. </p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="200" class="service-card-b">
+                <img class="s-pp" src="image/service2.svg">
+                <h4 class="s-name">Dịch tài liệu</h4>
+                <p class="s-role">Làm cho bản dịch dễ dàng! Chúng tôi cung cấp nhiều loại bản dịch để đơn giản hóa công việc hàng ngày của bạn. Tại chỗ hoặc qua điện thoại.</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-c">
+                <img class="s-pp" src="image/service3.svg">
+                <h4 class="s-name">Bằng lái xe</h4>
+                <p class="s-role">Cung cấp mọi loại giấy tờ liên quan tới xe của khách hàng </p>
+            </div>
+        </div>
     </div>
+
+
+    <div class="review-b">
+        <h3 class="review-title" data-aos="fade-down">Đánh giá</h3>
+        <section class="review-container" data-aos="fade-down">
+            <div class="review-card">
+              <img src="image/pdp.png">
+              <div class="review-element">
+                <h4>Alice</h4>
+                <img src="image/stars.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
+              </div>
+            </div>
+          
+            <div class="review-card">
+              <img src="image/pdp.png">
+              <div class="review-element">
+                <h4>Alice</h4>
+                <img src="image/stars.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
+              </div>
+            </div>
+          
+            <div class="review-card">
+              <img src="image/pdp.png">
+              <div class="review-element">
+                <h4>Alice</h4>
+                <img src="image/stars.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
+              </div>
+            </div>
+
+            <div class="review-card">
+                <img src="image/pdp.png">
+                <div class="review-element">
+                  <h4>Alice</h4>
+                  <img src="image/stars.png">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <img src="image/pdp.png">
+                <div class="review-element">
+                  <h4>Alice</h4>
+                  <img src="image/stars.png">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <img src="image/pdp.png">
+                <div class="review-element">
+                  <h4>Alice</h4>
+                  <img src="image/stars.png">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
+                </div>
+              </div>
+          </section>
+          
+    </div>
+
+    <div class="contact-page">
+        <h3 class="contact-title" data-aos="fade-down">Liên hệ</h3>
+        <div class="info">
+            <iframe class="map" data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169401.55688012092!2d37.667173420951315!3d55.702346261709486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscou%2C%20Russie!5e0!3m2!1sfr!2sfr!4v1698857981898!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="info-content" data-aos="fade-up">
+
+                <h4 class="location">Moscou - Russia</h4>
+                <p class="info-content-p">Liên lạc với chúng tôi để biết thêm thông tin</p>
+                <ul>
+                    <li>
+                        <a href="#" class="sn-link" target="_blank">
+                            <img src="image/mail.svg">
+                            <p>dcv.info@mail.ru</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sn-link" target="_blank">
+                            <img src="image/phone.fill.svg">
+                            <p>+7 929 660-79-99</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sn-link" target="_blank">
+                            <img src="image/whatsapp.svg">
+                            <p>Whatsapp</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sn-link" target="_blank">
+                            <img src="image/facebook.svg">
+                            <p>Facebook</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sn-link" target="_blank">
+                            <img src="image/zalo.svg">
+                            <p>Zalo</p>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Copyright by DỊCH VỤ CHÍNH. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        AOS.init({
+            once: true
+          });
+    </script>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav-link");
+
+        menuHamburger.addEventListener('click', (event) => {
+        navLinks.classList.toggle('mobile-menu');
+        event.stopPropagation(); 
+    });
+
+        document.addEventListener('click', (event) => {
+        if (!navLinks.contains(event.target) && !menuHamburger.contains(event.target)) {
+        navLinks.classList.remove('mobile-menu');
+    }
+    });
+    </script>
+
+    <script> 
+    function changerImage() {
+    const imageElement = document.getElementById("imageChanger");
+    if (imageElement.src.endsWith("image/Menu.svg")) {
+        imageElement.src = "image/multiply.svg";
+    } else {
+        imageElement.src = "image/Menu.svg";
+    }
+    }
+    </script>
 
 </body>
 </html>

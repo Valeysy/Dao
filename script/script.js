@@ -43,4 +43,3 @@ document.addEventListener('click', e => {
         dropdown.classList.remove('active');
     });
 });
-

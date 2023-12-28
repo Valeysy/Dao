@@ -1,0 +1,74 @@
+.service-b {
+    background: #f8fbff;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-title {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 590;
+    padding-top: 42px;
+    padding-bottom: 20px;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 130px;
+}
+
+.service-card-a {
+    padding: 30px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.10);
+    height: 240px;
+}
+
+.service-card-b {
+    padding: 30px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.10);
+}
+
+.service-card-c {
+    padding: 30px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.10);
+}
+
+.s-pp {
+    margin-bottom: 10px;
+} 
+
+.s-role {
+    color: var(--Gray-gray-700, #4A5568);
+    font-feature-settings: 'salt' on;
+    font-family: SF Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.s-name {
+    color: var(--Gray-gray-800, #2D3748);
+    font-family: SF Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+}

@@ -90,7 +90,7 @@ nav {
     position: absolute;
     left: 0;
     top: calc(100% + 0.55rem);
-    background-color: rgba(255, 255, 255, 0.78);
+    background-color: #ffffff;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px); 
     padding-inline: 20px;
@@ -158,7 +158,7 @@ nav {
 }
 
 .bg-b {
-    height: 65vh;
+    height: 62vh;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -202,6 +202,7 @@ header {
     color: transparent;
     animation: gradient 15s ease infinite;
     text-shadow: 4px 4px 30px rgba(0, 143, 255, 0.25);
+    filter: drop-shadow(20px 20px 50px rgba(24, 87, 147, 0.372));
     transition: 0.3s;
 }
 
@@ -228,13 +229,13 @@ header {
 
 @keyframes move-right-left {
     0% {
-      transform: translateX(-50px);
+      transform: translateX(-80px);
     }
     50% {
-      transform: translateY(60px);
+      transform: translateY(20px);
     }
     100% {
-      transform: translateX(-50px);
+      transform: translateX(-80px);
     }
 }
 

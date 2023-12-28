@@ -10,20 +10,21 @@
 body {
     max-width: 100%;
     width: 100%;
+    background-color: #000;
 }
 
 h1,h2,h3,h4,p {
     margin: 0;
     padding: 0; 
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #ffffff4a;
+    background-color: rgba(46, 46, 46, 0.50);
     list-style-type: none;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px); 
@@ -34,7 +35,6 @@ nav {
     right: 0;
     left: 0;
     z-index: 1000;
-    transition: all 0.5s;
 }
 
 .menu-hamburger {
@@ -51,12 +51,10 @@ nav {
     transition: all 0.9s;
 }
 
-
 .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
     transition: all 0.2s;
 }
 
@@ -66,7 +64,7 @@ nav {
 
 .logotitle {
     margin-left: 10px;
-    background: linear-gradient(105deg, #000 11.85%, #59BDFF 129.64%, #060A0D 129.64%, #2198E8 129.64%);
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -88,12 +86,11 @@ nav {
 .dropdown {
     position: relative;
 }
-
 .dropdown-menu {
     position: absolute;
     left: 0;
     top: calc(100% + 0.55rem);
-    background-color: #ffffff;
+    background-color: #000000;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px); 
     padding-inline: 20px;
@@ -101,7 +98,7 @@ nav {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
@@ -136,7 +133,7 @@ nav {
 
 .nav-link a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-inline: 20px;
     font-size: 16px;
     font-weight: 510;
@@ -154,46 +151,38 @@ nav {
 
 .lang p {
     margin-left: 15px;
-    color: rgba(0, 0, 0, 0.45);
+    color: rgba(255, 255, 255, 0.45);
     font-size: 16px;
-    font-weight: 510;
+    font-weight: 440;
     z-index: -1000;
 }
 
-.bg-a {
-    height: 100vh;
+.bg-c {
+    height: 62vh;
     width: 100%;
     padding: 0;
     margin: 0;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(98, 141, 210, 0.17) 100%);
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(98, 141, 210, 0.088) 100%);
 }
 
 header {
     height: 100vh;
     width: 100%;
-    background-image: url(../image/fond.svg);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-y: 60%;
-    background-position-x: 80%;
+    display: flex;
+    justify-content: center;
 }
 
-.title {
+.title-b {
     position: absolute;
-    top: 20pc;
-    left: 17pc;
+    top: 16pc;
     font-size: 34px;
 }
 
-.title h1 {
+.title-b h1 {
     background: rgba(255, 255, 255, 0);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     box-sizing: border-box;
     position: relative;
     font-weight: 590;
@@ -201,18 +190,19 @@ header {
     font-weight: 700;
 }
 
-.title h1::after {
-    content: "DỊCH VỤ CHÍNH";
+.title-b h1::after {
+    content: "Xe ô tô";
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0;
-    background: linear-gradient(-45deg, #001498 , #354DCF , #3686CE , #0800a8);
+    background: linear-gradient(105deg, #dd1ca7 11.85%, #59BDFF 129.64%, #1c33c9 11.85%);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: gradient 15s ease infinite;
+    animation: gradient 8s ease infinite;
     text-shadow: 4px 4px 30px rgba(0, 143, 255, 0.25);
+    filter: drop-shadow(20px 20px 50px rgb(139, 24, 147));
     transition: 0.3s;
 }
 
@@ -228,28 +218,24 @@ header {
     }
 }
 
-.title h2 {
-    margin-bottom: 50px;
-    color: #284AA3;
-}
-
 .contact {
-    color: #173686;
+    color: #ffffff;
     font-size: 20px;
     font-size: 700;
     background: #ffffff00;
-    border: 2px #284AA3 solid;
+    border: 1.5px #ffffff solid;
     height: 60px;
     width: 250px;
     border-radius: 200px;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    top: 50%;
     transition: 0.4s;
 }
 
 .contact:hover {
-    color: white;
-    width: 265px;
+    color: rgb(0, 0, 0);
+    border: 2px #ffffff00 solid;
 }
 
 .contact::before  {
@@ -259,21 +245,15 @@ header {
     height: 60px;
     width: 270px;
     border-radius: 200px;
-    background: linear-gradient(239deg, #284AA3 1.54%, #354DCF 100%);   
+    background: white;   
     z-index: -1;
     transition: all 0.4s;
     transform: translate(-135%);
     overflow: hidden;
-
 }
 
 .contact:hover::before {
     transform: translate(-38%);
-}
-
-.title h2 {
-    font-size: 24px;
-    font-weight: 520;
 }
 
 .btn {
@@ -305,4 +285,16 @@ header {
 
 .phone {
     transition: all 0.3s;
+}
+
+.car-a {
+    position: absolute;
+    top: 190px;
+    right: 0px;
+}
+
+.car-b {
+    position: absolute;
+    top: 190px;
+    left: 0px;
 }
