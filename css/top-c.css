@@ -73,6 +73,7 @@ nav {
 }
 
 .lang {
+    padding: 6px;
     margin-right: 20px;
     border: none;
     background: none;
@@ -90,7 +91,7 @@ nav {
     position: absolute;
     left: 0;
     top: calc(100% + 0.55rem);
-    background-color: #000000;
+    background-color: #ffffff;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px); 
     padding-inline: 20px;
@@ -107,13 +108,14 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 27px;
-    pointer-events: auto;
 }
 
 .dropdown.active > .lang + .dropdown-menu {
     opacity: 1;
     transform: translateY(0px);
+    pointer-events: auto;
 }
+
 
 .logotitle-a {
     font-size: 14px;
@@ -127,7 +129,7 @@ nav {
     padding: 0;
 }
 
-.nav-link li {
+.nav-link-a {
     transition: all 0.2s;
 }
 
@@ -139,7 +141,7 @@ nav {
     font-weight: 510;
 }
 
-.nav-link li:hover {
+.nav-link-a:hover {
     background-color: #00000013;
     padding: 13px;
     border-radius: 10px;

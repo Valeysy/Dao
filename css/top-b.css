@@ -73,6 +73,7 @@ nav {
 }
 
 .lang {
+    padding: 6px;
     margin-right: 20px;
     border: none;
     background: none;
@@ -107,13 +108,14 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 27px;
-    pointer-events: auto;
 }
 
 .dropdown.active > .lang + .dropdown-menu {
     opacity: 1;
     transform: translateY(0px);
+    pointer-events: auto;
 }
+
 
 .logotitle-a {
     font-size: 14px;
@@ -127,7 +129,7 @@ nav {
     padding: 0;
 }
 
-.nav-link li {
+.nav-link-a {
     transition: all 0.2s;
 }
 
@@ -139,7 +141,7 @@ nav {
     font-weight: 510;
 }
 
-.nav-link li:hover {
+.nav-link-a:hover {
     background-color: #00000013;
     padding: 13px;
     border-radius: 10px;
@@ -195,13 +197,13 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(-45deg, #354DCF , #3686CE);
+    background: linear-gradient(-45deg, #354DCF , #6dbbff);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: gradient 15s ease infinite;
-    text-shadow: 4px 4px 30px rgba(0, 143, 255, 0.25);
+    animation: gradient 8s ease infinite;
+    text-shadow: 4px 4px 30px rgba(70, 175, 255, 0.25);
     filter: drop-shadow(20px 20px 50px rgba(24, 87, 147, 0.372));
     transition: 0.3s;
 }

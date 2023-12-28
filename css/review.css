@@ -119,3 +119,11 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.review-pp {
+  width: 550px;
+  height: 170px;
+  border-radius: 1000px;
+  background-image: url(../image/pdp.png);
+  background-size: cover;
+}

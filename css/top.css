@@ -75,6 +75,7 @@ nav {
 }
 
 .lang {
+    padding: 6px;
     margin-right: 20px;
     border: none;
     background: none;
@@ -101,7 +102,7 @@ nav {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
@@ -110,12 +111,12 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 27px;
-    pointer-events: auto;
 }
 
 .dropdown.active > .lang + .dropdown-menu {
     opacity: 1;
     transform: translateY(0px);
+    pointer-events: auto;
 }
 
 .logotitle-a {
@@ -130,7 +131,7 @@ nav {
     padding: 0;
 }
 
-.nav-link li {
+.nav-link-a {
     transition: all 0.2s;
 }
 
@@ -142,7 +143,7 @@ nav {
     font-weight: 510;
 }
 
-.nav-link li:hover {
+.nav-link-a:hover {
     background-color: #00000013;
     padding: 13px;
     border-radius: 10px;
