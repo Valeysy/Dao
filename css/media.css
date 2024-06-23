@@ -1,7 +1,28 @@
+@media (max-width: 1552px) {
+  .car-a {
+    position: absolute;
+    top: 190px;
+    right: -200px;
+    overflow: hidden;
+  }
+
+  .car-b {
+      position: absolute;
+      top: 190px;
+      left: -200px;
+      overflow: hidden;
+  }
+}
+
 @media (max-width: 1024px) {
+
   .menu-hamburger {
     display: block;
     z-index: 10000;
+  }
+  
+  .circle-a,.circle-b,.circle-c {
+    scale: 0.8;
   }
 
   .nav-link {
@@ -20,13 +41,57 @@
     z-index: 10000;
   }
 
+  .car-a {
+    position: absolute;
+    top: 190px;
+    right: -400px;
+    overflow: hidden;
+  }
+
+  .car-b {
+      position: absolute;
+      top: 190px;
+      left: -350px;
+      overflow: hidden;
+  }
+
+  .nav-link-c{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+    padding-top: 35%;
+    background-color: rgb(0, 0, 0);
+    right: 0;
+    margin-right: -100%;
+    transition: all 0.5s;
+    flex-shrink: 0;
+    z-index: 10000;
+  }
+
   .nav-link li {
+    margin: 15px;
+  }
+
+  .nav-link-c li {
     margin: 15px;
   }
 
   .mobile-menu {
     margin-right: 0%;
     flex-shrink: 0;
+  }
+
+  .service-card-b {
+    height: 260px;
+    max-width: 180px;
+  }
+
+  .service-card-c {
+    height: 260px;
+    max-width: 180px;
   }
 
   .title {
@@ -43,7 +108,6 @@
   header {
     height: 100vh;
     width: 100%;
-    background-image: url(../image/fond.svg);
     background-repeat: no-repeat;
     background-size: 80%;
     background-position-y: 65%;
@@ -102,12 +166,66 @@
   .btn:hover .phone {
     transform: rotateY(0deg);
   }
+
+  .nav-link a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-inline: 20px;
+    font-size: 16px;
+    font-weight: 510;
+  }
+
+  .nav-link-c a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-inline: 20px;
+    font-size: 16px;
+    font-weight: 510;
+  }
+
+  .lang p {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 440;
+    z-index: -1000;
+  }
+  
 }
 
 @media (max-width: 620px) {
+
+  .car-a {
+    position: absolute;
+    top: 280px;
+    right: -330px;
+    overflow: hidden;
+    scale: 0.8;
+  }
+
+  .car-b {
+    display: none;
+  }
+  
   nav {
     padding-inline: 30px;
     height: 65px;
+  }
+
+  .circle-a,.circle-b,.lang-b{
+    scale: 0.6;
+  }
+
+  .bg-p-a,.bg-p-b,.bg-p-c{
+    scale: 0.5;
+  }
+
+
+  .lang-b {
+    left: 300px;
+  }
+
+  .circle-c {
+    display: none;
   }
 
   .menu-hamburger {
@@ -130,6 +248,38 @@
     flex-shrink: 0;
   }
 
+  .nav-link {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    width: 100%;
+    padding-top: 35%;
+    background-color: rgb(255, 255, 255);
+    right: 0;
+    margin-right: -100%;
+    transition: all 0.5s;
+    flex-shrink: 0;
+  }
+
+  .nav-link-c {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    width: 100%;
+    padding-top: 35%;
+    background-color: rgb(0, 0, 0);
+    right: 0;
+    margin-right: -100%;
+    transition: all 0.5s;
+    flex-shrink: 0;
+  }
+
   .nav-link li {
     margin: 15px;
   }
@@ -143,11 +293,14 @@
     visibility: hidden;
   }
 
+  .nav-link-c a:hover {
+    visibility: hidden;
+  }
+
   header {
     background-size: 100%;
     background-position-y: 60%;
     display: flex;
-    background-image: url(../image/fond.svg);
     justify-content: center;
   }
 
@@ -172,12 +325,47 @@
     padding-bottom: 90px;
   }
 
+  .service-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 90px;
+  }
+
+  .service-c {
+    display: flex;
+    align-items: center;
+    padding-bottom: 90px;
+  }
+
   .service-card {
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
 
+  .service-cards-b {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .service-card-b {
+    height: 240px;
+    max-width: 240px;
+  }
+
+  .service-cards-c {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .service-card-c {
+    height: 240px;
+    max-width: 240px;
+  }
+  
   .s-card-a {
     position: relative;
     width: 300px;
@@ -237,6 +425,18 @@
     width: 100%;
   }
 
+  .review-card-c {
+    display: flex;
+    width: 220px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    border-radius: 30px;
+    box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    animation: scroll 40s linear infinite;
+  }
+
   .review-card {
     display: flex;
     width: 220px;
@@ -259,6 +459,7 @@
     }
   }
 
+
   .review img {
     height: 130px;
     width: 130px;
@@ -271,6 +472,14 @@
   }
 
   .review-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .review-element-c {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -294,6 +503,17 @@
     overflow: hidden;
   }
 
+  .review-element-c p {
+    font-size: 15px;
+    font-weight: 420;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #ffffff;
+  }
+
   .map {
     width: 350px;
     height: 350px;
@@ -301,5 +521,13 @@
 
   .info-content {
     padding-inline: 7%;
+  }
+
+  .review-pp {
+    width: 170px;
+    height: 170px;
+    border-radius: 1000px;
+    background-image: url(../image/pdp.png);
+    background-size: cover;
   }
 }

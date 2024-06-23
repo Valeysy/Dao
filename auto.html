@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/service-c.css">
     <link rel="stylesheet" href="css/review.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/contact.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -50,7 +51,7 @@
             </div>
         </a>
 
-        <div class="nav-link">
+        <div class="nav-link-c">
 
             <div class="dropdown" data-dropdown>
                 <button class="lang" data-dropdown-button>
@@ -64,14 +65,14 @@
                 </div>
             </div>
             <li>
-                <a href="document.html" class="nav-link-a">Document</a>
+                <a href="document.html" class="nav-link-c-a">Document</a>
             </li>
             <li>
-                <a href="auto.html" class="nav-link-a">Auto</a>
+                <a href="auto.html" class="nav-link-c-a">Auto</a>
             </li>
         </div>
 
-        <img src="image/Menu.svg" id="imageChanger" onclick="changerImage()" class="menu-hamburger">
+        <img src="image/Menuauto.svg" id="imageChanger" onclick="changerImage()" class="menu-hamburger">
     </nav>
 
     <div class="bg-c">
@@ -97,20 +98,20 @@
 
     <div class="service-c">
         <h3 class="service-title" data-aos="fade-down">Loại dịch vụ</h3>
-        <div class="service-cards"> 
-            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-d">
+        <div class="service-cards-c"> 
+            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-c">
                 <img class="s-pp" src="image/service4.svg">
                 <h4 class="s-name">Sửa chữa</h4>
                 <p class="s-role">bảo dưỡng, độ  các loại xe theo yêu cầu của quý khách hàng. Sang tên, đổi chủ xe</p>
             </div>
 
-            <div data-aos="zoom-in" data-aos-delay="200" class="service-card-e">
+            <div data-aos="zoom-in" data-aos-delay="200" class="service-card-c">
                 <img class="s-pp" src="image/service5.svg">
                 <h4 class="s-name">Xe hơi</h4>
                 <p class="s-role">Cung cấp biển số xe đẹp. Cung cấp tất cả các loại giấy tờ liên quan đến xe của khách hàng</p>
             </div>
 
-            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-f">
+            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-c">
                 <img class="s-pp" src="image/service6.svg">
                 <h4 class="s-name">Xử lý sự cố</h4>
                 <p class="s-role">Sản xuất cùng chuyên gia, làm việc tại Nga. Dịch vụ bảo hiểm Lam Osago, Kasko</p>
@@ -236,7 +237,7 @@
 
     <script>
         const menuHamburger = document.querySelector(".menu-hamburger");
-        const navLinks = document.querySelector(".nav-link");
+        const navLinks = document.querySelector(".nav-link-c");
 
         menuHamburger.addEventListener('click', (event) => {
         navLinks.classList.toggle('mobile-menu');
@@ -253,10 +254,10 @@
     <script> 
     function changerImage() {
     const imageElement = document.getElementById("imageChanger");
-    if (imageElement.src.endsWith("image/Menu.svg")) {
+    if (imageElement.src.endsWith("image/Menuauto.svg")) {
         imageElement.src = "image/multiply.svg";
     } else {
-        imageElement.src = "image/Menu.svg";
+        imageElement.src = "image/Menuauto.svg";
     }
     }
     </script>

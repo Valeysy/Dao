@@ -87,6 +87,7 @@ nav {
 .dropdown {
     position: relative;
 }
+
 .dropdown-menu {
     position: absolute;
     left: 0;
@@ -122,18 +123,18 @@ nav {
     color: #000;
 }
 
-.nav-link {
+.nav-link-c {
     display: flex;
     list-style: none;
     align-items: center;
     padding: 0;
 }
 
-.nav-link-a {
+.nav-link-c-a {
     transition: all 0.2s;
 }
 
-.nav-link a {
+.nav-link-c a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin-inline: 20px;
@@ -141,7 +142,7 @@ nav {
     font-weight: 510;
 }
 
-.nav-link-a:hover {
+.nav-link-c-a:hover {
     background-color: #00000013;
     padding: 13px;
     border-radius: 10px;
@@ -160,8 +161,10 @@ nav {
 }
 
 .bg-c {
+    position: relative;
+    overflow: hidden;
     height: 62vh;
-    width: 100%;
+    max-width: 100%;
     padding: 0;
     margin: 0;
     background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(98, 141, 210, 0.088) 100%);
@@ -231,7 +234,7 @@ header {
     border-radius: 200px;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 500px;
     transition: 0.4s;
 }
 
@@ -292,11 +295,13 @@ header {
 .car-a {
     position: absolute;
     top: 190px;
-    right: 0px;
+    right: -100px;
+    overflow: hidden;
 }
 
 .car-b {
     position: absolute;
     top: 190px;
-    left: 0px;
+    left: -100px;
+    overflow: hidden;
 }
