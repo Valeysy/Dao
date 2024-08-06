@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/top-b.css">
-    <link rel="stylesheet" href="css/loader.css">
-    <link rel="stylesheet" href="css/service-b.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script/script.js"></script>
     <script src="script/loader.js"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" src="image/favicon.svg" type="image/png">
+    <title>DỊCH VỤ CHÍNH</title>
 </head>
+
 <body>
 
     <div class="loader">
@@ -60,7 +63,7 @@
                 </button>
 
                 <div class="dropdown-menu">
-                    <a href="document-eng.html">English</a> 
+                    <a href="index.html">English</a> 
                     <a href="index.html">Russian</a> 
                 </div>
             </div>
@@ -73,62 +76,93 @@
         </div>
 
         <img src="image/Menu.svg" id="imageChanger" onclick="changerImage()" class="menu-hamburger">
+
     </nav>
-
-    <div class="bg-b">
+    
+    <div class="bg-a">
         <header>
-            <div data-aos="fade" class="title-b">
-                <h1>Dịch thuật</h1>
-            </div>
-            <img src="image/cercle.svg" class="circle-a">
-            <img src="image/cercle.svg" class="circle-b">
-            <img src="image/cercle.svg" class="circle-c">
-            <img src="image/language2.svg" class="lang-b">
-            <p class="bg-p-a">Language</p>
-            <p class="bg-p-b">Tiếng Nga</p>
-            <p class="bg-p-c">Вьетнамский язык</p>
-
-            <button class="contact" id="scroll-to-bottom2">
-                Liên hệ
-                <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
-            </button>
+                <div data-aos="fade-right" class="title">
+                    <h1>>DỊCH VỤ CHÍNH</h1>
+                    <h2>Lựa chọn chính xác của bạn</h2>
+                    <button class="contact" id="scroll-to-bottom2">
+                        Liên hệ
+                        <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+                    </button>
+                </div>
         </header>
     </div>
-
 
     <button data-aos="fade-down-left" class="btn" id="scroll-to-bottom">
         <img src="image/phone.white.svg" class="phone">
     </button>
 
-    <div class="service-b">
-        <h3 class="service-title" data-aos="fade-down">Loại dịch vụ</h3>
-        <div class="service-cards-b"> 
-            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-b">
-                <img class="s-pp" src="image/service1.svg">
-                <h4 class="s-name">Chính thức</h4>
-                <p class="s-role">Tất cả các tài liệu chính thức của bạn, Chúng tôi đảm nhiệm việc dịch các tài liệu chính thức của bạn. Giấy đăng ký kết hôn và khai sinh, giấy chứng nhận công chứng, mua bán bất động sản. </p>
+    <div class="service">
+        <h3 class="service-title" data-aos="fade-down">Document</h3>
+            <div class="service-card" data-aos="zoom-in">
+                <a href="document.html" class="s-card-a">
+                    <div class="s-card-element">
+                        <h4 class="s-card-title">Document</h4>
+                        <p class="s-card-p">Nhóm của chúng tôi ở đây để giúp bạn mọi thứ bạn cần. Từ dịch thuật tài liệu đến sự hỗ trợ của phiên dịch viên. Mọi thứ đều ở đó để làm cho cuộc sống hàng ngày của bạn trở nên đơn giản.</p>
+                        <img class="s-arrow" src="image/chevron.right.circle.svg">
+                    </div>
+                </a>
+                <a href="auto.html" class="s-card-b">
+                    <div class="s-card-element">
+                        <h4 class="s-card-title">Auto</h4>
+                        <p class="s-card-p">Sửa chữa ô tô, sơn lại, vệ sinh, mọi thứ đều nhằm mục đích mang lại những gì tốt nhất cho chiếc xe của bạn. Dịch vụ tuyệt vời của chúng tôi luôn sẵn sàng phục vụ bạn!</p>
+                        <img class="s-arrow" src="image/chevron.right.circle.svg">
+                    </div>
+                </a>
             </div>
-
-            <div data-aos="zoom-in" data-aos-delay="200" class="service-card-b">
-                <img class="s-pp" src="image/service2.svg">
-                <h4 class="s-name">Dịch tài liệu</h4>
-                <p class="s-role">Làm cho bản dịch dễ dàng! Chúng tôi cung cấp nhiều loại bản dịch để đơn giản hóa công việc hàng ngày của bạn. Tại chỗ hoặc qua điện thoại.</p>
-            </div>
-
-            <div data-aos="zoom-in" data-aos-delay="300" class="service-card-b">
-                <img class="s-pp" src="image/service3.svg">
-                <h4 class="s-name">Bằng lái xe</h4>
-                <p class="s-role">Cung cấp mọi loại giấy tờ liên quan tới xe của khách hàng </p>
-            </div>
-        </div>
     </div>
 
+    <div class="team">
+        <h3 class="team-title" data-aos="fade-down">Team của Dịch vụ chính</h3>
 
-    <div class="review-b">
+        <section class="teamate">
+            <div data-aos="zoom-in" data-aos-delay="100" class="mate">
+                <div class="team-pp"></div>
+                <h4 class="team-name">Dima Archibasev</h4>
+                <p class="team-role">CEO</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="200" class="mate">
+                <div class="team-pp"></div>
+                <h4 class="team-name">Dima Archibasev</h4>
+                <p class="team-role">CEO</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300" class="mate">
+                <div class="team-pp"></div>
+                <h4 class="team-name">Dima Archibasev</h4>
+                <p class="team-role">CEO</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="400" class="mate">
+                <div class="team-pp"></div>
+                <h4 class="team-name">Dima Archibasev</h4>
+                <p class="team-role">CEO</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="100" class="mate">
+                <div class="team-pp"></div>
+                <h4 class="team-name">Dima Archibasev</h4>
+                <p class="team-role">CEO</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="200" class="mate">
+                <div class="team-pp"></div>
+                <h4 class="team-name">Dima Archibasev</h4>
+                <p class="team-role">CEO</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300" class="mate">
+                <div class="team-pp"></div>
+                <h4 class="team-name">Dima Archibasev</h4>
+                <p class="team-role">CEO</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="review">
         <h3 class="review-title" data-aos="fade-down">Đánh giá</h3>
         <section class="review-container" data-aos="fade-down">
             <div class="review-card">
-              <img src="image/pdp.png">
+              <div class="review-pp"></div>
               <div class="review-element">
                 <h4>Alice</h4>
                 <img src="image/stars.png">
@@ -137,8 +171,8 @@
             </div>
           
             <div class="review-card">
-              <img src="image/pdp.png">
-              <div class="review-element">
+                <div class="review-pp"></div>
+                <div class="review-element">
                 <h4>Alice</h4>
                 <img src="image/stars.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
@@ -146,8 +180,8 @@
             </div>
           
             <div class="review-card">
-              <img src="image/pdp.png">
-              <div class="review-element">
+                <div class="review-pp"></div>
+                <div class="review-element">
                 <h4>Alice</h4>
                 <img src="image/stars.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices egestas sem, ut faucibus tellus porta quis. Sed libero augue, imperdiet in tempus vel, faucibus quis erat. Nam pretium quam in lobortis feugiat. </p>
@@ -155,7 +189,7 @@
             </div>
 
             <div class="review-card">
-                <img src="image/pdp.png">
+                <div class="review-pp"></div>
                 <div class="review-element">
                   <h4>Alice</h4>
                   <img src="image/stars.png">
@@ -164,7 +198,7 @@
               </div>
 
               <div class="review-card">
-                <img src="image/pdp.png">
+                <div class="review-pp"></div>
                 <div class="review-element">
                   <h4>Alice</h4>
                   <img src="image/stars.png">
@@ -173,7 +207,7 @@
               </div>
 
               <div class="review-card">
-                <img src="image/pdp.png">
+                <div class="review-pp"></div>
                 <div class="review-element">
                   <h4>Alice</h4>
                   <img src="image/stars.png">
@@ -232,12 +266,13 @@
         <p>© 2023 Copyright by DỊCH VỤ CHÍNH. All rights reserved.</p>
     </footer>
 
-
     <script>
         AOS.init({
             once: true
           });
     </script>
+
+    
 
     <script>
         const menuHamburger = document.querySelector(".menu-hamburger");
@@ -267,4 +302,5 @@
     </script>
 
 </body>
+
 </html>
