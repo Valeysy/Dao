@@ -131,22 +131,13 @@ nav {
     padding: 0;
 }
 
-.nav-link-a {
-    transition: all 0.2s;
-}
-
 .nav-link a {
     text-decoration: none;
     color: black;
     margin-inline: 20px;
     font-size: 16px;
     font-weight: 510;
-}
-
-.nav-link-a:hover {
-    background-color: #00000013;
-    padding: 13px;
-    border-radius: 10px;
+    text-align:center
 }
 
 .lang img {

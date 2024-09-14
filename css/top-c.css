@@ -130,23 +130,15 @@ nav {
     padding: 0;
 }
 
-.nav-link-c-a {
-    transition: all 0.2s;
-}
-
 .nav-link-c a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin-inline: 20px;
     font-size: 16px;
     font-weight: 510;
+    text-align:center
 }
 
-.nav-link-c-a:hover {
-    background-color: #00000013;
-    padding: 13px;
-    border-radius: 10px;
-}
 
 .lang img {
     z-index: -1000;
@@ -163,7 +155,7 @@ nav {
 .bg-c {
     position: relative;
     overflow: hidden;
-    height: 62vh;
+    height: 70vh;
     max-width: 100%;
     padding: 0;
     margin: 0;
