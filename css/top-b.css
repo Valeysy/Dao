@@ -211,6 +211,98 @@ header {
     }
 }
 
+.title-b-eng {
+    position: absolute;
+    top: 16pc;
+    font-size: 34px;
+}
+
+.title-b-eng h1 {
+    background: rgba(255, 255, 255, 0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 590;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.title-b-eng h1::after {
+    content: "Automobiles";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #354DCF , #6dbbff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient 8s ease infinite;
+    text-shadow: 4px 4px 30px rgba(70, 175, 255, 0.25);
+    filter: drop-shadow(20px 20px 50px rgba(24, 87, 147, 0.372));
+    transition: 0.3s;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.title-b-ru {
+    position: absolute;
+    top: 16pc;
+    font-size: 34px;
+}
+
+.title-b-ru h1 {
+    background: rgba(255, 255, 255, 0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 590;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.title-b-ru h1::after {
+    content: "Переводы";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #354DCF , #6dbbff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient 8s ease infinite;
+    text-shadow: 4px 4px 30px rgba(70, 175, 255, 0.25);
+    filter: drop-shadow(20px 20px 50px rgba(24, 87, 147, 0.372));
+    transition: 0.3s;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .circle-a {
     width: 170px;
     position: absolute;
